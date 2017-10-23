@@ -1,3 +1,6 @@
-<h2 id="title">Welcome to Ember</h2>
-
+<div class="jumbotron text-center">
+  <h2 id="title">{{#link-to 'application'}}Interesting Code Posts{{/link-to}}</h2>
+  {{#link-to 'posts'}}<button class="btn btn-primary">All Posts</button>{{/link-to}}
+  {{#link-to 'posts.new'}}<button class="btn btn-primary">Add new Post</button>{{/link-to}}
+</div>
 {{outlet}}

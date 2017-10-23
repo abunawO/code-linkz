@@ -1,9 +1,10 @@
 /* jshint node: true */
-
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'code-links',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://code-links.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

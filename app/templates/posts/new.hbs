@@ -1,0 +1,18 @@
+<h2 style="background-color: black;color:white;padding-left:10px;"><strong>New Post</strong></h2>
+<form>
+  <div style="color:black; font-size: 20px;background-color:yellow; padding:10px;">
+    <div class="form-group">
+      <label for="titleInput">Title</label>
+      {{input value=title placeholder="Title" class="form-control" id="titleInput"}}
+    </div>
+    <div class="form-group">
+      <label for="authorInput">Author</label>
+      {{input value=author placeholder="Author" class="form-control" id="authorInput"}}
+    </div>
+    <div class="form-group">
+      <label for="yearInput">Code Link</label>
+      {{input value=link placeholder="Link" class="form-control" id="linkInput"}}
+    </div>
+    <button style="margin: 5px;" {{action "publishPost"}} class="btn btn-default">Publish</button>
+  </div>
+</form>
