@@ -4,7 +4,7 @@
     <section>
       <h2 style="background-color: black;color:white;padding-left:10px;"><strong>Post List</strong></h2>
       {{#each model as |post|}}
-      <div style="color:black; font-size: 20px;background-color:yellow; padding-left:10px;">
+      <div style="color:black; font-size: 20px;background-color:yellow; padding-left:10px;word-break: break-all;">
         <p style="padding-top: 10px; padding-left:10px;">Title: <strong>{{post.title}}</strong></p>
         <p style="padding-left:10px;">Author: {{post.author}}</p>
         <p style="padding-left:10px;">Code Link: <a href='http://{{post.link}}'> {{post.link}} </a></p>
